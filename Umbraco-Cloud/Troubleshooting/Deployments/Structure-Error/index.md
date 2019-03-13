@@ -96,8 +96,10 @@ We strongly recommend that you resolve this locally since this will ensure that 
 5.    Open CMD prompt and navigate to your local `/data` folder
 6.    Type the following command: `echo > deploy`
 7.    You will now see a `deploy-complete` marker in your local `/data` folder
-8.    **Important**: Before you commit and push the changes to the Development environment, you need to access the backoffice of the Development environment and remove the Document Type from there
-9.    You are now ready to **commit** and **push** the changes from your local clone to the Development environment, using your local Git client.
+8.    You are now ready to **commit** and **push** the changes from your local clone to the Development environment, using your local Git client.
+9.    You need to access the backoffice of the Development environment and remove the Document Type from there. 
+10.   Because last deploy still failed for the Development environment you need to access **Kudu** for the Development enviroment and navigate to the `site/wwwroot/data/` folder. There you run this command:`echo > deploy`. You will now You will now see a `deploy-complete` marker in the `site/wwwroot/data/` folder.
+
 
 ![Removing wrong UDA file](images/visualization4.png)
 
